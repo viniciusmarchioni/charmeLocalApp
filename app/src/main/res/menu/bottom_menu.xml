@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:title="@string/home_Title"
+        android:title="@string/homeTitle"
         android:id="@+id/home"
         android:icon="@drawable/homeicon"
         app:showAsAction="ifRoom"
         />
     <item
-        android:title="@string/search_Title"
+        android:title="@string/searchTitle"
         android:id="@+id/search"
         android:icon="@drawable/searchicon"
         app:showAsAction="ifRoom"
         />
     <item
-        android:title="@string/account_Title"
+        android:title="@string/accountTitle"
         android:id="@+id/account"
         android:icon="@drawable/accounticon"
         app:showAsAction="ifRoom"

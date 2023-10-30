@@ -1,10 +1,9 @@
 <resources>
-    <string name="app_name">CharmeLocal</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="account_Title">Account</string>
-    <string name="home_Title">Home</string>
-    <string name="search_Title">Search</string>
-    <string name="cartDescription">Cart</string>
+    <string name="app_name">Charme Local</string>
+    <string name="accountTitle">Account</string>
+    <string name="homeTitle">Home</string>
+    <string name="searchTitle">Search</string>
+    <string name="cartItemDescription">Cart</string>
     <string name="cartTitle">Cart</string>
+    <string name="backItemDescription">Return to home page</string>
 </resources>
