@@ -12,10 +12,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
-    //Fragmentos de navegação
-    private lateinit var homeFragment: homeFragment
-    private lateinit var searchFragment: searchFragment
-    private lateinit var accountFragment: accountFragment
+    private lateinit var homeFragment: HomeFragment
+    private lateinit var searchFragment: SearchFragment
+    private lateinit var accountFragment: AccountFragment
     private lateinit var bottomNavigationView: BottomNavigationView
     private lateinit var titleText: TextView
 
@@ -25,48 +24,40 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         window.statusBarColor = getColor(R.color.black)
         window.navigationBarColor = getColor(R.color.white)
 
-        //Instanciando fragmentos
-        homeFragment = homeFragment()
-        searchFragment = searchFragment()
-        accountFragment = accountFragment()
+        homeFragment = HomeFragment()
+        searchFragment = SearchFragment()
+        accountFragment = AccountFragment()
 
-
-        val cartbutton = findViewById<ImageButton>(R.id.CartButtom)
+        val cartButton = findViewById<ImageButton>(R.id.CartButtom)
         titleText = findViewById<TextView>(R.id.openText)
 
         bottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigationView.setOnNavigationItemSelectedListener(this)
 
-
-        cartbutton.setOnClickListener{
-            goToSecoundLayout()
+        cartButton.setOnClickListener {
+            goToNewLayout(CartActivity())
         }
 
         setFragment(homeFragment)
     }
 
-    //função para chamar fragmentos
     private fun setFragment(fragment: Fragment) {
         val fragmentTransaction = supportFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frame, fragment)
+        fragmentTransaction.replace(R.id.fragmentContainer, fragment)
         fragmentTransaction.commit()
     }
 
-    //função que verifica fragmentos selecionados
     @SuppressLint("SetTextI18n")
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-
             R.id.home -> {
                 setFragment(homeFragment)
                 titleText.text = "Home"
             }
-
             R.id.search -> {
                 setFragment(searchFragment)
                 titleText.text = "Search"
             }
-
             R.id.account -> {
                 setFragment(accountFragment)
                 titleText.text = "Account"
@@ -75,9 +66,8 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         return true
     }
 
-    private fun goToSecoundLayout(){
-        val secoundLayout = Intent(this,CartActivity::class.java)
-        startActivity(secoundLayout)
+    private fun goToNewLayout(page:AppCompatActivity){
+        val newLayout = Intent(this,page::class.java)
+        startActivity(newLayout)
     }
-
 }

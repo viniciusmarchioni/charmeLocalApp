@@ -10,18 +10,17 @@ class CartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cart)
 
-        val cartbutton = findViewById<ImageButton>(R.id.backButtom)
+        val cartButton = findViewById<ImageButton>(R.id.backButtom)
         window.statusBarColor = getColor(R.color.black)
         window.navigationBarColor = getColor(R.color.white)
-        cartbutton.setOnClickListener{
-            goToSecoundLayout()
+        cartButton.setOnClickListener{
+            goToNewLayout(MainActivity())
         }
-
     }
 
 
-    private fun goToSecoundLayout(){
-        val secoundLayout = Intent(this,MainActivity::class.java)
-        startActivity(secoundLayout)
+    private fun goToNewLayout(page:AppCompatActivity){
+        val newLayout = Intent(this,page::class.java)
+        startActivity(newLayout)
     }
 }
