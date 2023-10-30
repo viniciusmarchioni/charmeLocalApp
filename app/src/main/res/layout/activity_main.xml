@@ -6,11 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/upNavView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/home_Title"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/CartButtom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="Descrição do ícone"
+            android:src="@drawable/carticon" />
+
+    </LinearLayout>
+
+
     <FrameLayout
         android:id="@+id/frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/bottom_navigation" />
+        android:layout_above="@id/bottom_navigation"
+        android:layout_below="@id/upNavView" />
 
     <!--  Apenas borda no BottomNavigationView  -->
     <View

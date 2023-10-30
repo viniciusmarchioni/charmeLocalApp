@@ -5,4 +5,5 @@
     <string name="account_Title">Account</string>
     <string name="home_Title">Home</string>
     <string name="search_Title">Search</string>
+    <string name="cartDescription">Cart</string>
 </resources>
