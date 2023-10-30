@@ -6,4 +6,5 @@
     <string name="home_Title">Home</string>
     <string name="search_Title">Search</string>
     <string name="cartDescription">Cart</string>
+    <string name="cartTitle">Cart</string>
 </resources>

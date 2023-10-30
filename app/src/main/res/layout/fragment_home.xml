@@ -6,14 +6,4 @@
     android:background="@color/white"
     tools:context=".homeFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_gravity="center"
-        android:text="@string/home_Title"
-        android:textColor="@color/black"
-        android:textSize="50sp" />
-
-
 </RelativeLayout>
