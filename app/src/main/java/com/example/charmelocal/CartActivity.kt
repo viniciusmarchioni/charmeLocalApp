@@ -12,7 +12,7 @@ class CartActivity : AppCompatActivity() {
 
         val cartbutton = findViewById<ImageButton>(R.id.backButtom)
         window.statusBarColor = getColor(R.color.black)
-        window.navigationBarColor = getColor(R.color.white)
+        window.navigationBarColor = getColor(R.color.white);
         cartbutton.setOnClickListener{
             goToSecoundLayout()
         }
