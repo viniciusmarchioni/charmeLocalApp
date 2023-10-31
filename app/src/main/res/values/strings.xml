@@ -10,5 +10,5 @@
     <string name="requestAccountName">Name and surname</string>
     <string name="requestAccountCellPhone">Cell phone</string>
     <string name="requestAccountEmail">E-mail</string>
-    <string name="requestAccountPassword">Senha</string>
+    <string name="requestAccountPassword">Password</string>
 </resources>
