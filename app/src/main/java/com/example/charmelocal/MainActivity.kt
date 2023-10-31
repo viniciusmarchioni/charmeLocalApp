@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         accountFragment = AccountFragment()
 
         val cartButton = findViewById<ImageButton>(R.id.CartButtom)
-        titleText = findViewById<TextView>(R.id.openText)
+        titleText = findViewById(R.id.openText)
 
         bottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigationView.setOnNavigationItemSelectedListener(this)

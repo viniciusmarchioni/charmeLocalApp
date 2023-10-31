@@ -6,4 +6,9 @@
     <string name="cartItemDescription">Cart</string>
     <string name="cartTitle">Cart</string>
     <string name="backItemDescription">Return to home page</string>
+    <string name="accountPhotoDescription">Profile photo</string>
+    <string name="requestAccountName">Name and surname</string>
+    <string name="requestAccountCellPhone">Cell phone</string>
+    <string name="requestAccountEmail">E-mail</string>
+    <string name="requestAccountPassword">Senha</string>
 </resources>
