@@ -1,4 +1,4 @@
-package com.example.charmelocal
+package com.example.charmelocal.initial
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -8,6 +8,8 @@ import android.view.MenuItem
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.example.charmelocal.CartActivity
+import com.example.charmelocal.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
@@ -27,7 +29,6 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         homeFragment = HomeFragment()
         searchFragment = SearchFragment()
         accountFragment = AccountFragment()
-
         val cartButton = findViewById<ImageButton>(R.id.CartButtom)
         titleText = findViewById(R.id.openText)
 
@@ -54,10 +55,12 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                 setFragment(homeFragment)
                 titleText.text = "Home"
             }
+
             R.id.search -> {
                 setFragment(searchFragment)
                 titleText.text = "Search"
             }
+
             R.id.account -> {
                 setFragment(accountFragment)
                 titleText.text = "Account"
@@ -66,8 +69,8 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         return true
     }
 
-    private fun goToNewLayout(page:AppCompatActivity){
-        val newLayout = Intent(this,page::class.java)
+    private fun goToNewLayout(page: AppCompatActivity) {
+        val newLayout = Intent(this, page::class.java)
         startActivity(newLayout)
     }
 }

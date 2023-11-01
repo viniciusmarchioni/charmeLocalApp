@@ -4,20 +4,19 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
-import com.example.charmelocal.initial.MainActivity
 
-class CartActivity : AppCompatActivity() {
+class RegisterStoreActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cart)
+        setContentView(R.layout.activity_register_store)
+        val buttonBack = findViewById<ImageButton>(R.id.backButtom)
 
-        val cartButton = findViewById<ImageButton>(R.id.backButtom)
-        window.statusBarColor = getColor(R.color.black)
-        window.navigationBarColor = getColor(R.color.white)
-        cartButton.setOnClickListener{
-            goToNewLayout(MainActivity())
+        buttonBack.setOnClickListener{
+            goToNewLayout(LoginActivity())
         }
+
     }
+
 
 
     private fun goToNewLayout(page:AppCompatActivity){

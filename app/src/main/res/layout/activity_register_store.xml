@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterCustomerActivity">
+
+    <LinearLayout
+        android:id="@+id/upNavView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ImageButton
+            android:id="@+id/backButtom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/backItemDescription"
+            android:src="@drawable/backicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="Register"
+            android:textAlignment="viewStart"
+            android:textSize="25sp"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textCnpj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upNavView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="CNPJ"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editCnpj"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textCnpj"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:padding="12dp"
+        android:hint="xxxxxxxxx-xx"
+        android:textAlignment="center"
+        android:autofillHints=""
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textStoreName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editCnpj"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Store Name"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editStoreName"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textStoreName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:padding="12dp"
+        android:hint="xxxxxx xxxxx xx xxxxxxxxx"
+        android:textAlignment="center"
+        android:autofillHints=""
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textCellPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editStoreName"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Cell Phone"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editCellPhone"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textCellPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:padding="12dp"
+        android:hint="(xx)xxxxxxxxx"
+        android:textAlignment="center"
+        android:autofillHints=""
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editCellPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="E-mail"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:padding="12dp"
+        android:hint="xxxxxxxxxxx@xxxxx.com"
+        android:textAlignment="center"
+        android:autofillHints=""
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:minWidth="130dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_rounded_corners"
+        android:padding="12dp"
+        android:hint="************"
+        android:textAlignment="center"
+        android:autofillHints=""
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/singUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sing Up"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/editPassword"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
