@@ -14,9 +14,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
-    private lateinit var homeFragment: HomeFragment
-    private lateinit var searchFragment: SearchFragment
-    private lateinit var accountFragment: AccountFragment
+    private var homeFragment: HomeFragment = HomeFragment()
+    private var searchFragment: SearchFragment = SearchFragment()
+    private var accountFragment: AccountFragment = AccountFragment()
     private lateinit var bottomNavigationView: BottomNavigationView
     private lateinit var titleText: TextView
 
@@ -24,9 +24,6 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        homeFragment = HomeFragment()
-        searchFragment = SearchFragment()
-        accountFragment = AccountFragment()
         val cartButton = findViewById<ImageButton>(R.id.CartButtom)
         titleText = findViewById(R.id.openText)
 
