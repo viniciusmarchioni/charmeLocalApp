@@ -51,48 +51,54 @@
     <EditText
         android:id="@+id/editCnpj"
         style="@style/Widget.AppCompat.EditText"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textCnpj"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:background="@drawable/edittext_rounded_corners"
-        android:padding="12dp"
-        android:hint="xxxxxxxxx-xx"
-        android:textAlignment="center"
         android:autofillHints=""
-        android:inputType="number" />
+        android:background="@drawable/edittext_rounded_corners"
+        android:hint="xxxxxxxx/xxxx-xx"
+        android:inputType="number"
+        android:maxLength="14"
+        android:maxLines="1"
+        android:minWidth="140dp"
+        android:padding="12dp"
+        android:textAlignment="center" />
 
     <TextView
-        android:id="@+id/textStoreName"
+        android:id="@+id/textName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editCnpj"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:text="Store Name"
+        android:text="Store name"
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/editStoreName"
-        android:layout_width="240dp"
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textStoreName"
+        android:layout_below="@+id/textName"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:background="@drawable/edittext_rounded_corners"
-        android:padding="12dp"
-        android:hint="xxxxxx xxxxx xx xxxxxxxxx"
-        android:textAlignment="center"
         android:autofillHints=""
-        android:inputType="textPersonName" />
+        android:background="@drawable/edittext_rounded_corners"
+        android:hint="xxxxxxxxxxxxxxx"
+        android:inputType="textPersonName"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:minWidth="120dp"
+        android:padding="12dp"
+        android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textCellPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editStoreName"
+        android:layout_below="@+id/editName"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
@@ -106,12 +112,15 @@
         android:layout_below="@+id/textCellPhone"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:background="@drawable/edittext_rounded_corners"
-        android:padding="12dp"
-        android:hint="(xx)xxxxxxxxx"
-        android:textAlignment="center"
         android:autofillHints=""
-        android:inputType="phone" />
+        android:background="@drawable/edittext_rounded_corners"
+        android:hint="(xx)xxxxxxxxx"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:minWidth="140dp"
+        android:padding="12dp"
+        android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textEmail"
@@ -126,17 +135,20 @@
 
     <EditText
         android:id="@+id/editEmail"
-        android:layout_width="230dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textEmail"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:background="@drawable/edittext_rounded_corners"
-        android:padding="12dp"
-        android:hint="xxxxxxxxxxx@xxxxx.com"
-        android:textAlignment="center"
         android:autofillHints=""
-        android:inputType="textEmailAddress"/>
+        android:background="@drawable/edittext_rounded_corners"
+        android:hint="xxxxxxxxxxx@xxxxx.com"
+        android:inputType="textEmailAddress"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:minWidth="200dp"
+        android:padding="12dp"
+        android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textPassword"
@@ -151,28 +163,29 @@
 
     <EditText
         android:id="@+id/editPassword"
-        android:minWidth="130dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textPassword"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:background="@drawable/edittext_rounded_corners"
-        android:padding="12dp"
-        android:hint="************"
-        android:textAlignment="center"
         android:autofillHints=""
-        android:inputType="textPassword"/>
+        android:background="@drawable/edittext_rounded_corners"
+        android:hint="************"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:maxLines="1"
+        android:minWidth="130dp"
+        android:padding="12dp"
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/singUpButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sing Up"
-        android:backgroundTint="@color/black"
         android:layout_below="@id/editPassword"
-        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:text="Sing Up" />
 
 </RelativeLayout>

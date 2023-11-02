@@ -23,8 +23,6 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        window.statusBarColor = getColor(R.color.black)
-        window.navigationBarColor = getColor(R.color.white)
 
         homeFragment = HomeFragment()
         searchFragment = SearchFragment()

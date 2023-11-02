@@ -23,7 +23,7 @@ class HomeFragment : Fragment() {
     ): View? {
         //infla o layout para possibilitar o findViewById
         val view = inflater.inflate(R.layout.fragment_home, container, false)
-/*
+
         //Pega a Tag do Botão
         val btn = view.findViewById<Button>(R.id.teste)
 
@@ -31,7 +31,7 @@ class HomeFragment : Fragment() {
             val intent = Intent (activity, LoginActivity::class.java)
             activity?.startActivity(intent)
         }
-*/
+
         return view
     }
 }
