@@ -15,7 +15,6 @@ class RegisterCustomerActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register_customer)
 
 
-
         val buttonBack = findViewById<ImageButton>(R.id.backButtom)
         val buttonSingIn = findViewById<Button>(R.id.singUpButton)
 

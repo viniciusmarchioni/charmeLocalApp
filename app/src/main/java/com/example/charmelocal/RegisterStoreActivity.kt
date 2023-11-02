@@ -16,7 +16,6 @@ class RegisterStoreActivity : AppCompatActivity() {
         val buttonBack = findViewById<ImageButton>(R.id.backButtom)
         val buttonSingIn = findViewById<Button>(R.id.singUpButton)
 
-
         buttonSingIn.setOnClickListener {
             val cnpj = findViewById<EditText>(R.id.editCnpj)
             val name = findViewById<EditText>(R.id.editName)
