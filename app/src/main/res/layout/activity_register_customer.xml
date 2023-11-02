@@ -38,143 +38,84 @@
 
     <TextView
         android:id="@+id/textCpf"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/textTitleStyle"
         android:layout_below="@+id/upNavView"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="CPF"
-        android:textSize="18sp" />
+        android:text="CPF" />
 
     <EditText
         android:id="@+id/editCpf"
-        style="@style/Widget.AppCompat.EditText"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        style="@style/editTextStyle"
         android:layout_below="@+id/textCpf"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
         android:autofillHints=""
-        android:background="@drawable/edittext_rounded_corners"
         android:hint="xxxxxxxxx-xx"
         android:inputType="number"
         android:maxLength="11"
-        android:maxLines="1"
-        android:padding="12dp"
-        android:textAlignment="center" />
+        android:minWidth="150dp" />
 
     <TextView
         android:id="@+id/textName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/textTitleStyle"
         android:layout_below="@+id/editCpf"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="Name and Surname"
-        android:textSize="18sp" />
+        android:text="Name and Surname" />
 
     <EditText
         android:id="@+id/editName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/editTextStyle"
         android:layout_below="@+id/textName"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
         android:autofillHints=""
-        android:background="@drawable/edittext_rounded_corners"
         android:hint="xxxxxx xxxxx xx xxxxxxxxx"
         android:inputType="textPersonName"
         android:maxLength="30"
-        android:maxLines="1"
-        android:minWidth="200dp"
-        android:padding="12dp"
-        android:textAlignment="center" />
+        android:minWidth="200dp" />
 
     <TextView
         android:id="@+id/textCellPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/textTitleStyle"
         android:layout_below="@+id/editName"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="Cell Phone"
-        android:textSize="18sp" />
+        android:text="Cell Phone" />
 
     <EditText
         android:id="@+id/editCellPhone"
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
+        style="@style/editTextStyle"
         android:layout_below="@+id/textCellPhone"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
         android:autofillHints=""
         android:background="@drawable/edittext_rounded_corners"
         android:hint="(xx)xxxxxxxxx"
         android:inputType="phone"
         android:maxLength="11"
-        android:maxLines="1"
-        android:minWidth="140dp"
-        android:padding="12dp"
-        android:textAlignment="center" />
+        android:minWidth="140dp" />
 
     <TextView
         android:id="@+id/textEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/textTitleStyle"
         android:layout_below="@+id/editCellPhone"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="E-mail"
-        android:textSize="18sp" />
+        android:text="E-mail" />
 
     <EditText
         android:id="@+id/editEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/editTextStyle"
         android:layout_below="@+id/textEmail"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
         android:autofillHints=""
-        android:background="@drawable/edittext_rounded_corners"
         android:hint="xxxxxxxxxxx@xxxxx.com"
         android:inputType="textEmailAddress"
         android:maxLength="30"
-        android:maxLines="1"
-        android:minWidth="200dp"
-        android:padding="12dp"
-        android:textAlignment="center" />
+        android:minWidth="200dp" />
 
     <TextView
         android:id="@+id/textPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/textTitleStyle"
         android:layout_below="@+id/editEmail"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="Password"
-        android:textSize="18sp" />
+        android:text="Password" />
 
     <EditText
         android:id="@+id/editPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/editTextStyle"
         android:layout_below="@+id/textPassword"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
         android:autofillHints=""
-        android:background="@drawable/edittext_rounded_corners"
-        android:hint="************"
+        android:hint="**********"
         android:inputType="textPassword"
         android:maxLength="16"
-        android:maxLines="1"
-        android:minWidth="130dp"
-        android:padding="12dp"
-        android:textAlignment="center" />
+        android:minWidth="130dp" />
 
     <Button
         android:id="@+id/singUpButton"

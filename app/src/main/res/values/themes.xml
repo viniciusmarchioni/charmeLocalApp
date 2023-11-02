@@ -7,5 +7,24 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <style name="textTitleStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="editTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/edittext_rounded_corners</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
     <style name="Theme.CharmeLocal" parent="Base.Theme.CharmeLocal" />
 </resources>
