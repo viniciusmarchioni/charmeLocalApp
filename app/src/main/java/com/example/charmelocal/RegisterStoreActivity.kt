@@ -34,6 +34,10 @@ class RegisterStoreActivity : AppCompatActivity() {
 
     }
 
+    private fun goToNewLayout(page:AppCompatActivity){
+        val newLayout = Intent(this,page::class.java)
+        startActivity(newLayout)
+    }
 
     private fun checkValues(vararg value: EditText): Boolean{
         val red = Color.parseColor("#DD6F6F")
@@ -48,10 +52,5 @@ class RegisterStoreActivity : AppCompatActivity() {
             }
         }
         return true
-    }
-
-    private fun goToNewLayout(page:AppCompatActivity){
-        val newLayout = Intent(this,page::class.java)
-        startActivity(newLayout)
     }
 }
