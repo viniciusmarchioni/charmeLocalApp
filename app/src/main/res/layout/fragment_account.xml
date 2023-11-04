@@ -15,82 +15,40 @@
         android:src="@drawable/accounticon" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/textTitleStyle"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="@string/requestAccountName"
-        android:textAlignment="center"
-        android:textSize="18sp" />
+        android:text="@string/requestAccountName" />
 
     <TextView
-        style="@style/Widget.AppCompat.EditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/editName"
+        style="@style/editTextStyle"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edittext_rounded_corners"
-        android:padding="12dp"
         android:text="xxxxxx xxxxx xxxxxxxxxx"
-        android:textAlignment="center" />
+        android:textSize="20sp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/textTitleStyle"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="@string/requestAccountCellPhone"
-        android:textAlignment="center"
-        android:textSize="18sp" />
+        android:text="@string/requestAccountCellPhone" />
 
     <TextView
-        style="@style/Widget.AppCompat.EditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/editCellPhone"
+        style="@style/editTextStyle"
+        android:textSize="20sp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edittext_rounded_corners"
-        android:padding="12dp"
-        android:text="(xx)xxxxxxxxx"
-        android:textAlignment="center" />
+        android:text="(xx)xxxxxxxxx" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/textTitleStyle"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="@string/requestAccountEmail"
-        android:textAlignment="center"
-        android:textSize="18sp" />
+        android:text="@string/requestAccountEmail" />
 
     <TextView
-        style="@style/Widget.AppCompat.EditText"
-        android:layout_width="198dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/editEmail"
+        style="@style/editTextStyle"
+        android:textSize="20sp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edittext_rounded_corners"
-        android:text="xxxxxxx@xxxx.com"
-        android:textAlignment="center" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="@string/requestAccountPassword"
-        android:textAlignment="center"
-        android:textSize="18sp" />
-
-    <TextView
-        style="@style/Widget.AppCompat.EditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edittext_rounded_corners"
-        android:text="************"
-        android:textAlignment="center" />
+        android:text="xxxxxxx@xxxx.com" />
 
 
 </LinearLayout>

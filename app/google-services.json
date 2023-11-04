@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "247659662306",
+    "project_id": "tristeza-dois-ponto-zero",
+    "storage_bucket": "tristeza-dois-ponto-zero.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247659662306:android:ca187f8cf314c4ac9887bb",
+        "android_client_info": {
+          "package_name": "com.example.charmelocal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPfX7zc3uuIAV_c7Ba8slfoYpWYXHplEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

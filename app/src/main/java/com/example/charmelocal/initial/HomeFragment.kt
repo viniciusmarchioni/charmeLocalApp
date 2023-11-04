@@ -7,8 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
-import com.example.charmelocal.LoginActivity
+import com.example.charmelocal.ChoiceActivity
 import com.example.charmelocal.R
 
 class HomeFragment : Fragment() {
@@ -28,7 +27,7 @@ class HomeFragment : Fragment() {
         val btn = view.findViewById<Button>(R.id.teste)
 
         btn.setOnClickListener {
-            val intent = Intent (activity, LoginActivity::class.java)
+            val intent = Intent (activity, ChoiceActivity::class.java)
             activity?.startActivity(intent)
         }
 

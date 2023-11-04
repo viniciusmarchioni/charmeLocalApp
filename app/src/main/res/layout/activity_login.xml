@@ -1,56 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
     android:background="@color/white"
-    >
+    tools:context=".RegisterCustomerActivity">
 
+    <LinearLayout
+        android:id="@+id/upNavView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
 
-    <ImageView
-        android:id="@+id/Logo"
-        android:layout_width="116dp"
-        android:layout_height="115dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:src="@drawable/logo"
-        android:contentDescription="logo" />
+        <ImageButton
+            android:id="@+id/backButtom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="@string/backItemDescription"
+            android:src="@drawable/backicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="Login"
+            android:textAlignment="viewStart"
+            android:textSize="25sp"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textCpf"
+        style="@style/textTitleStyle"
+        android:layout_below="@+id/upNavView"
+        android:text="CPF/CNPJ" />
+
+    <EditText
+        android:id="@+id/editCpf"
+        style="@style/editTextStyle"
+        android:layout_below="@+id/textCpf"
+        android:autofillHints=""
+        android:hint="xxxxxxxxx-xx"
+        android:inputType="number"
+        android:maxLength="14"
+        android:minWidth="150dp" />
+
+    <TextView
+        android:id="@+id/textPassword"
+        style="@style/textTitleStyle"
+        android:layout_below="@+id/editCpf"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        style="@style/editTextStyle"
+        android:layout_below="@+id/textPassword"
+        android:autofillHints=""
+        android:hint="**********"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:minWidth="130dp" />
 
     <Button
-        android:id="@+id/cadClient"
+        android:id="@+id/singInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register as a customer"
-        android:layout_below="@id/Logo"
+        android:layout_below="@id/editPassword"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:backgroundTint="#50C8B2"
-        android:textColor="@color/black"
-        />
-
-    <Button
-        android:id="@+id/cadSeller"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register as a seller"
-        android:layout_below="@id/cadClient"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:backgroundTint="#50C8B2"
-        android:textColor="@color/black"
-        />
-    <Button
-        android:id="@+id/singIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign in"
-        android:layout_below="@id/cadSeller"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        />
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:text="Sing In" />
 
 </RelativeLayout>

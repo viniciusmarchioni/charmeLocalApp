@@ -29,7 +29,7 @@ class RegisterStoreActivity : AppCompatActivity() {
         }
 
         buttonBack.setOnClickListener{
-            goToNewLayout(LoginActivity())
+            goToNewLayout(ChoiceActivity())
         }
 
     }

@@ -1,5 +1,6 @@
 package com.example.charmelocal
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
@@ -10,14 +11,13 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.charmelocal.initial.MainActivity
 
 class RegisterCustomerActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_customer)
 
-
         val buttonBack = findViewById<ImageButton>(R.id.backButtom)
         val buttonSingIn = findViewById<Button>(R.id.singUpButton)
-
 
         buttonSingIn.setOnClickListener {
             val cpf = findViewById<EditText>(R.id.editCpf)
@@ -27,17 +27,18 @@ class RegisterCustomerActivity : AppCompatActivity() {
             val password = findViewById<EditText>(R.id.editPassword)
 
             if(checkValues(cpf,name,cellphone,email,password)){
-                goToNewLayout(MainActivity())
+                goToNewLayout(LoginActivity())
             }
         }
 
         buttonBack.setOnClickListener{
-            goToNewLayout(LoginActivity())
+            goToNewLayout(ChoiceActivity())
         }
 
     }
 
     private fun checkValues(vararg value: EditText): Boolean{
+
         val red = Color.parseColor("#DD6F6F")
         for(i in value){
             if(i.text == null || i.text.toString() == ""){

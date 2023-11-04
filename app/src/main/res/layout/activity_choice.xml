@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoiceActivity"
+    android:background="@color/white"
+    >
+
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="116dp"
+        android:layout_height="115dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/logo"
+        android:contentDescription="logo" />
+
+    <Button
+        android:id="@+id/cadClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register as a customer"
+        android:layout_below="@id/Logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#50C8B2"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/cadSeller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register as a seller"
+        android:layout_below="@id/cadClient"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#50C8B2"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/singIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:layout_below="@id/cadSeller"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        />
+
+</RelativeLayout>

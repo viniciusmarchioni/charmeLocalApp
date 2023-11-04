@@ -14,9 +14,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
-    private var homeFragment: HomeFragment = HomeFragment()
-    private var searchFragment: SearchFragment = SearchFragment()
-    private var accountFragment: AccountFragment = AccountFragment()
     private lateinit var bottomNavigationView: BottomNavigationView
     private lateinit var titleText: TextView
 
@@ -34,7 +31,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             goToNewLayout(CartActivity())
         }
 
-        setFragment(homeFragment)
+        setFragment(HomeFragment())
     }
 
     private fun setFragment(fragment: Fragment) {
@@ -47,17 +44,17 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.home -> {
-                setFragment(homeFragment)
+                setFragment(HomeFragment())
                 titleText.text = "Home"
             }
 
             R.id.search -> {
-                setFragment(searchFragment)
+                setFragment(SearchFragment())
                 titleText.text = "Search"
             }
 
             R.id.account -> {
-                setFragment(accountFragment)
+                setFragment(AccountFragment())
                 titleText.text = "Account"
             }
         }
