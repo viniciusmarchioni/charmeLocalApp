@@ -2,18 +2,14 @@ package com.example.charmelocal
 
 import android.content.Intent
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.example.charmelocal.initial.MainActivity
 
 class LoginActivity : AppCompatActivity() {
-
-    private var cpfCorrect: String = "47386011806"
-    private var passwordCorrect: String = "12345678"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,19 +24,12 @@ class LoginActivity : AppCompatActivity() {
             goToNewLayout(ChoiceActivity())
         }
 
-
         singInButton.setOnClickListener {
-            if (cpf.text.toString() != cpfCorrect) {
-                cpf.setBackgroundColor(red)
-            } 
-            else if (password.text.toString() != passwordCorrect) {
-                password.setBackgroundColor(red)
-            } else {
-                goToNewLayout(MainActivity())
-            }
+            goToNewLayout(MainActivity())
         }
     }
 
+    data class person(var cpf:String,var nome:String,var email:String,var password:String)
     private fun goToNewLayout(page: AppCompatActivity) {
         val newLayout = Intent(this, page::class.java)
         startActivity(newLayout)
