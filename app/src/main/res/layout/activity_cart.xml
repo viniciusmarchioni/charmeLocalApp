@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white"
-    >
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/upNavView"
@@ -29,14 +28,13 @@
             android:layout_height="match_parent"
             android:layout_weight="6"
             android:background="@color/white"
-            android:textAlignment="viewStart"
             android:gravity="center"
             android:text="@string/cartTitle"
+            android:textAlignment="viewStart"
             android:textSize="25sp"
             tools:ignore="RtlCompat" />
 
     </LinearLayout>
-
 
 
 </LinearLayout>

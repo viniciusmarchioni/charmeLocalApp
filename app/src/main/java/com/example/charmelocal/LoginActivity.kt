@@ -11,10 +11,10 @@ import com.example.charmelocal.initial.MainActivity
 
 class LoginActivity : AppCompatActivity() {
 
+    val red = Color.parseColor("#DD6F6F")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        val red = Color.parseColor("#DD6F6F")
         val cpf = findViewById<EditText>(R.id.editCpf)
         val password = findViewById<EditText>(R.id.editPassword)
         val singInButton = findViewById<Button>(R.id.singInButton)
@@ -29,7 +29,8 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    data class person(var cpf:String,var nome:String,var email:String,var password:String)
+    data class person(var cpf: String, var nome: String, var email: String, var password: String)
+
     private fun goToNewLayout(page: AppCompatActivity) {
         val newLayout = Intent(this, page::class.java)
         startActivity(newLayout)

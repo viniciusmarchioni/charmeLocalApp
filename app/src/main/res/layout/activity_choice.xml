@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChoiceActivity"
     android:background="@color/white"
-    >
+    tools:context=".ChoiceActivity">
 
 
     <ImageView
@@ -14,42 +13,40 @@
         android:layout_height="115dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
-        android:src="@drawable/logo"
-        android:contentDescription="logo" />
+        android:contentDescription="@string/appIcon"
+        android:src="@drawable/logo" />
 
     <Button
         android:id="@+id/cadClient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register as a customer"
         android:layout_below="@id/Logo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:backgroundTint="#50C8B2"
-        android:textColor="@color/black"
-        />
+        android:text="@string/registerCustomer"
+        android:textColor="@color/black" />
 
     <Button
         android:id="@+id/cadSeller"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register as a seller"
         android:layout_below="@id/cadClient"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:backgroundTint="#50C8B2"
-        android:textColor="@color/black"
-        />
+        android:text="@string/registerSeller"
+        android:textColor="@color/black" />
+
     <Button
         android:id="@+id/singIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign in"
         android:layout_below="@id/cadSeller"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        />
+        android:text="@string/singInText"
+        android:textColor="@color/black" />
 
 </RelativeLayout>

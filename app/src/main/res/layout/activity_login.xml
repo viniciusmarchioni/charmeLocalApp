@@ -29,7 +29,7 @@
             android:layout_weight="6"
             android:background="@color/white"
             android:gravity="center"
-            android:text="Login"
+            android:text="@string/singInText"
             android:textAlignment="viewStart"
             android:textSize="25sp"
             tools:ignore="RtlCompat" />
@@ -40,14 +40,14 @@
         android:id="@+id/textCpf"
         style="@style/textTitleStyle"
         android:layout_below="@+id/upNavView"
-        android:text="CPF/CNPJ" />
+        android:text="@string/requestAccountCpfCnpj" />
 
     <EditText
         android:id="@+id/editCpf"
         style="@style/editTextStyle"
         android:layout_below="@+id/textCpf"
         android:autofillHints=""
-        android:hint="xxxxxxxxx-xx"
+        android:hint="@string/cpfCnpjHint"
         android:inputType="number"
         android:maxLength="14"
         android:minWidth="150dp" />
@@ -56,14 +56,14 @@
         android:id="@+id/textPassword"
         style="@style/textTitleStyle"
         android:layout_below="@+id/editCpf"
-        android:text="Password" />
+        android:text="@string/requestAccountPassword" />
 
     <EditText
         android:id="@+id/editPassword"
         style="@style/editTextStyle"
         android:layout_below="@+id/textPassword"
         android:autofillHints=""
-        android:hint="**********"
+        android:hint="@string/passwordHint"
         android:inputType="textPassword"
         android:maxLength="16"
         android:minWidth="130dp" />
@@ -76,6 +76,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/black"
-        android:text="Sing In" />
+        android:text="@string/singInText" />
 
 </RelativeLayout>

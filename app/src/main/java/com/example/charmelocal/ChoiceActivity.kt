@@ -26,8 +26,8 @@ class ChoiceActivity : AppCompatActivity() {
         }
     }
 
-    private fun goToNewLayout(page:AppCompatActivity){
-        val newLayout = Intent(this,page::class.java)
+    private fun goToNewLayout(page: AppCompatActivity) {
+        val newLayout = Intent(this, page::class.java)
         startActivity(newLayout)
     }
 }

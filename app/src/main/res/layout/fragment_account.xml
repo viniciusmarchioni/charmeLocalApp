@@ -23,7 +23,7 @@
         android:id="@+id/editName"
         style="@style/editTextStyle"
         android:layout_gravity="center"
-        android:text="xxxxxx xxxxx xxxxxxxxxx"
+        android:text="@string/nameHint"
         android:textSize="20sp" />
 
     <TextView
@@ -34,9 +34,9 @@
     <TextView
         android:id="@+id/editCellPhone"
         style="@style/editTextStyle"
-        android:textSize="20sp"
         android:layout_gravity="center"
-        android:text="(xx)xxxxxxxxx" />
+        android:text="@string/cellPhoneHint"
+        android:textSize="20sp" />
 
     <TextView
         style="@style/textTitleStyle"
@@ -46,9 +46,9 @@
     <TextView
         android:id="@+id/editEmail"
         style="@style/editTextStyle"
-        android:textSize="20sp"
         android:layout_gravity="center"
-        android:text="xxxxxxx@xxxx.com" />
+        android:text="@string/emailHint"
+        android:textSize="20sp" />
 
 
 </LinearLayout>

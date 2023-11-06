@@ -1,7 +1,6 @@
 package com.example.charmelocal
 
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -23,31 +22,29 @@ class RegisterStoreActivity : AppCompatActivity() {
             val email = findViewById<EditText>(R.id.editEmail)
             val password = findViewById<EditText>(R.id.editPassword)
 
-            if(checkValues(cnpj,name,cellphone,email,password)){
+            if (checkValues(cnpj, name, cellphone, email, password)) {
                 goToNewLayout(MainActivity())
             }
         }
 
-        buttonBack.setOnClickListener{
+        buttonBack.setOnClickListener {
             goToNewLayout(ChoiceActivity())
         }
 
     }
 
-    private fun goToNewLayout(page:AppCompatActivity){
-        val newLayout = Intent(this,page::class.java)
+    private fun goToNewLayout(page: AppCompatActivity) {
+        val newLayout = Intent(this, page::class.java)
         startActivity(newLayout)
     }
 
-    private fun checkValues(vararg value: EditText): Boolean{
-        val red = Color.parseColor("#DD6F6F")
-        for(i in value){
-            if(i.text == null || i.text.toString() == ""){
-                i.setBackgroundColor(red)
+    private fun checkValues(vararg value: EditText): Boolean {
+        for (i in value) {
+            if (i.text == null || i.text.toString() == "") {
+                i.setBackgroundColor(LoginActivity().red)
                 return false
-            }
-            else if(i.id == R.id.editCpf && i.text.length < 10){
-                i.setBackgroundColor(red)
+            } else if (i.id == R.id.editCpf && i.text.length < 10) {
+                i.setBackgroundColor(LoginActivity().red)
                 return false
             }
         }

@@ -14,14 +14,14 @@ class CartActivity : AppCompatActivity() {
         val cartButton = findViewById<ImageButton>(R.id.backButtom)
         window.statusBarColor = getColor(R.color.black)
         window.navigationBarColor = getColor(R.color.white)
-        cartButton.setOnClickListener{
+        cartButton.setOnClickListener {
             goToNewLayout(MainActivity())
         }
     }
 
 
-    private fun goToNewLayout(page:AppCompatActivity){
-        val newLayout = Intent(this,page::class.java)
+    private fun goToNewLayout(page: AppCompatActivity) {
+        val newLayout = Intent(this, page::class.java)
         startActivity(newLayout)
     }
 }

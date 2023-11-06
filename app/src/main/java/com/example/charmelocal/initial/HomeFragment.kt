@@ -27,7 +27,7 @@ class HomeFragment : Fragment() {
         val btn = view.findViewById<Button>(R.id.teste)
 
         btn.setOnClickListener {
-            val intent = Intent (activity, ChoiceActivity::class.java)
+            val intent = Intent(activity, ChoiceActivity::class.java)
             activity?.startActivity(intent)
         }
 

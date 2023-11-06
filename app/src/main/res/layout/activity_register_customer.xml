@@ -17,7 +17,6 @@
             android:id="@+id/backButtom"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_gravity="end"
             android:layout_weight="1"
             android:background="@color/white"
             android:contentDescription="@string/backItemDescription"
@@ -29,7 +28,7 @@
             android:layout_weight="6"
             android:background="@color/white"
             android:gravity="center"
-            android:text="Register"
+            android:text="@string/registerTitle"
             android:textAlignment="viewStart"
             android:textSize="25sp"
             tools:ignore="RtlCompat" />
@@ -40,14 +39,14 @@
         android:id="@+id/textCpf"
         style="@style/textTitleStyle"
         android:layout_below="@+id/upNavView"
-        android:text="CPF" />
+        android:text="@string/requestAccountCpf" />
 
     <EditText
         android:id="@+id/editCpf"
         style="@style/editTextStyle"
         android:layout_below="@+id/textCpf"
         android:autofillHints=""
-        android:hint="xxxxxxxxx-xx"
+        android:hint="@string/cpfCnpjHint"
         android:inputType="number"
         android:maxLength="11"
         android:minWidth="150dp" />
@@ -56,14 +55,14 @@
         android:id="@+id/textName"
         style="@style/textTitleStyle"
         android:layout_below="@+id/editCpf"
-        android:text="Name and Surname" />
+        android:text="@string/requestAccountName" />
 
     <EditText
         android:id="@+id/editName"
         style="@style/editTextStyle"
         android:layout_below="@+id/textName"
         android:autofillHints=""
-        android:hint="xxxxxx xxxxx xx xxxxxxxxx"
+        android:hint="@string/nameHint"
         android:inputType="textPersonName"
         android:maxLength="30"
         android:minWidth="200dp" />
@@ -72,7 +71,7 @@
         android:id="@+id/textCellPhone"
         style="@style/textTitleStyle"
         android:layout_below="@+id/editName"
-        android:text="Cell Phone" />
+        android:text="@string/requestAccountCellPhone" />
 
     <EditText
         android:id="@+id/editCellPhone"
@@ -80,7 +79,7 @@
         android:layout_below="@+id/textCellPhone"
         android:autofillHints=""
         android:background="@drawable/edittext_rounded_corners"
-        android:hint="(xx)xxxxxxxxx"
+        android:hint="@string/cellPhoneHint"
         android:inputType="phone"
         android:maxLength="11"
         android:minWidth="140dp" />
@@ -89,14 +88,14 @@
         android:id="@+id/textEmail"
         style="@style/textTitleStyle"
         android:layout_below="@+id/editCellPhone"
-        android:text="E-mail" />
+        android:text="@string/requestAccountEmail" />
 
     <EditText
         android:id="@+id/editEmail"
         style="@style/editTextStyle"
         android:layout_below="@+id/textEmail"
         android:autofillHints=""
-        android:hint="xxxxxxxxxxx@xxxxx.com"
+        android:hint="@string/emailHint"
         android:inputType="textEmailAddress"
         android:maxLength="30"
         android:minWidth="200dp" />
@@ -105,14 +104,14 @@
         android:id="@+id/textPassword"
         style="@style/textTitleStyle"
         android:layout_below="@+id/editEmail"
-        android:text="Password" />
+        android:text="@string/requestAccountPassword" />
 
     <EditText
         android:id="@+id/editPassword"
         style="@style/editTextStyle"
         android:layout_below="@+id/textPassword"
         android:autofillHints=""
-        android:hint="**********"
+        android:hint="@string/passwordHint"
         android:inputType="textPassword"
         android:maxLength="16"
         android:minWidth="130dp" />
@@ -125,6 +124,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/black"
-        android:text="Sing Up" />
+        android:text="@string/singUpText" />
 
 </RelativeLayout>
